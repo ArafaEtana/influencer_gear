@@ -1,0 +1,413 @@
+/* Header css */
+nav{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Yeseva One', cursive;
+    margin:40px 120px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 16px;
+
+}
+
+#tag{
+    font-size: 24px;
+} 
+
+/* section intoduction css */
+
+.introduction{
+    margin-left:120px;
+    display: flex;
+    margin-top: 60px;
+}
+.half_width{
+    width:50%;
+}
+.half_width img{
+    width:50%;
+    margin-left: 150px;
+    padding-bottom: 50px;
+
+}
+.half_width h1{
+    font-size: 52px;
+    margin:0;
+}
+.prebook_btn{
+    font-size: 16px;
+    text-decoration: none;
+    color:white;
+    background-color: #E02C6D;
+    padding:6px 18px;
+    border-radius: 20px;
+}
+/* logo section css */
+.logo_section{
+    border : 2px solid gray;
+    height: 110px;
+    width: 1110px;
+    margin-left:165px ;
+    margin-top: 50px;
+}
+.logo_div{
+    padding-top: 35px  ;
+    padding-left: 120px;
+    display: flex;
+    
+}
+.logo{
+    padding-right: 60px;
+    align-items: center;
+}
+/* collection */
+
+.popular_collection{
+    height: 1640px;
+    width: 1015px; 
+    margin-left: 210px;
+    
+}
+.main_line{
+    padding:20px;
+    text-align: center;
+    font-size: 28px;
+}
+.all_products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+}
+.product{
+    height: 480px;
+    width: 330px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    
+}
+.product_img{
+    height: 256px;
+    width: 300px;
+    padding:15px;
+    border-radius: 5px;
+}
+.product h1{
+    margin-left: 15px;
+    
+}
+.price{
+    margin-left: 15px;
+    margin-top: 0;
+    font-size: 24px;
+
+}
+.star{
+    margin-left: 15px;
+    margin-top: 0;
+    color: orange;
+
+}
+.product p{
+    margin-left: 15px;
+    margin-top: 0;
+
+}
+.gray{
+    color:#5E6366;
+}
+.popular_collection .see_div{
+    width:1015px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.see_more{
+    text-decoration: none;
+    color:#E02C6D;
+    
+}
+
+
+/* payment section */
+.payment{
+    display: flex;
+    margin-bottom: 100px;
+}
+.half_width #pay_img{
+    margin-left: 250px;
+    width: 50%;
+    height: 250px;
+    border-radius: 15px;
+}
+.pay_info{
+    margin:0;
+    font-size: 35px;
+  
+}
+.pay_info2{
+    margin:0;
+    font-size: 35px;
+    margin-bottom: 10px;
+  
+}
+.half_width .pay_h1{
+    margin-bottom: 15px;
+}
+.half_width .learn_btn{
+    text-decoration: none;
+    color:white;
+    background-color: salmon;
+    padding:5px 10px;
+    border-radius: 5px;
+    
+}
+
+/* footer section */
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.footer a{
+    color: white;
+    margin-right:5px;
+}
+
+  /* media queries */
+
+  /* for phone */
+
+@media (max-width: 600px) {
+   
+      /* header media */
+   
+    nav{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 0;
+         
+
+    }
+    #tag{
+        font-size: 18px;
+    }
+    .nav_part a{
+        font-size: 10px;
+        text-align: center;
+       
+    }
+    nav a{
+        margin-right: 10px;
+    }
+    .nav_part{
+        margin-top:20px;
+        
+    }
+    
+     /* introduction section */
+    .introduction{
+        flex-direction: column;
+        margin-left:80px;
+        margin-top: 40px;
+    }
+    .half_width h1{
+        font-size: 40px;
+        margin:0;
+    }
+    .half_width img{
+        width:100%;
+        margin-left: 80px;
+        padding-top: 50px;
+    
+    }
+     /* logo section */
+    .logo_section{
+        border:none;
+        margin-top:0px;
+    }
+    
+    .logo_div{
+       padding-top:10px;
+       padding-left: 10px;
+       width:300px;
+       justify-content: space-evenly;
+    }
+    
+    .logo{
+        height: 35px;
+        width: 35px;
+
+    }
+    /* products section */
+    .all_products{
+        display: block;
+        
+    }
+    .popular_collection{
+        width: 80%;
+        margin-left: 90px;  
+        margin-top: 0px; 
+    }
+    .main_line{
+        padding:10px 0px;
+        text-align: center;
+        font-size: 28px;
+        padding-right: 50px;
+    }
+    .product{
+        height: 480px;
+        width: 330px;
+        background-color: white;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        
+    }
+    .popular_collection .see_div{
+        width:90%;
+        margin-top: 10px;
+        text-align: right;
+    }
+    /* payment section */
+    .payment{
+        margin-top: 3000px;   
+    }
+   
+    .pay_info{
+        margin:0;
+        font-size: 15px;
+      
+    }
+    .pay_info2{
+        margin:0;
+        font-size: 15px;
+        margin-bottom: 10px;
+      
+    }
+    .half_width .pay_h1{
+        margin-top: 20px;
+    }
+    .half_width #pay_img{
+        margin-left: 80px;
+        width: 60%;
+        height: 150px;
+        border-radius: 5%;
+    }
+
+   /* footer section */
+    
+    .footer {
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    
+  
+}
+
+/* for tablet */
+
+
+@media (min-width: 600px) and (max-width: 900px)  {
+    
+    /* header media */
+    nav{
+        margin:40px 50px;
+    }
+    #tag{
+        font-size: 20px;
+    } 
+    nav_part{
+        margin-left: 400px;
+    }
+
+    /* intoduction part */
+
+    .introduction{
+        margin-left:60px;
+        margin-top: 60px;
+    }
+    .half_width img{
+        width:60%;
+        margin-left: 100px;
+        padding-bottom: 50px;
+    
+    }
+    .half_width h1{
+        font-size: 40px;
+        margin:0;
+    }
+
+    /* logosection */
+
+    .logo_section{
+        border : none;
+        margin-top:0px;
+    }
+    .logo{
+        height: 70px;
+        width: 70px;
+
+    }
+    .logo_div{
+        padding-top:10px;
+        padding-left: 150px;
+        width:300px;
+        justify-content: space-evenly;
+     }
+       /* products section */
+    .popular_collection{
+        width: 80%;
+        margin-left: 100px;  
+        margin-top: 0px; 
+    }
+    .all_products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:10px;
+        grid-column-gap: 10px;
+        
+    }
+    .popular_collection .see_div{
+        width:95%;
+        margin-top: 10px;
+        text-align: right;
+    }
+    /* payment section */
+    .payment{
+        margin-top: 950px;   
+    }
+    .half_width #pay_img{
+        margin-left: 100px;
+        width: 60%;
+        height: 200px;
+        border-radius: 15px;
+    }
+    .pay_info{
+        margin:0;
+        font-size: 18px;
+      
+    }
+    .pay_info2{
+        margin:0;
+        font-size: 18px;
+        margin-bottom: 10px;
+      
+    }
+    
+   
+  
+}
